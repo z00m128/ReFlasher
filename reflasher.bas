@@ -11,7 +11,7 @@
 18 load "MB02_5" code val "49152": goto val "5"
 19 load "MB02_6" code val "49152": goto val "5"
 27 load "DevAce" code val "49152": goto val "5"
-28 load "bios" code val "49152": goto val "5"
+28 load "setup" code val "49152": goto val "5"
 29 load "reserved" code val "49152": goto val "5"
 30 load "reserved" code val "49152": goto val "5"
 31 load "reserved" code val "49152": goto val "5"

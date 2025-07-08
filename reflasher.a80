@@ -1,10 +1,10 @@
 ;-------------------------------------;
 ;    ReFlasher for  MB03+ Ultimate    ;
 ;-------------------------------------;
-; (c) 2021 z00m^SinDiKAT
+; (c) 2025 z00m^SinDiKAT
 ; formatted for SjASMPlus
 
-; Version: 1.6
+; Version: 1.7
 
 		device	zxspectrum48
 
@@ -44,9 +44,9 @@ again:		call	clear_stat_ln
 		jp	z,flash_tbios
 		cp	'*'			; flash all banks
 		jp	z,flash_all
-		cp	'+'			; flash DEMFIR
+		cp	'-'			; flash DEMFIR
 		jp	z,flash_demfir
-		cp	'-'			; flash +divide
+		cp	'+'			; flash +divide
 		jp	z,flash_pldivide
 		cp	'0'
 		jp	c,wrong_key
@@ -827,8 +827,8 @@ txt_unodos:	db	"@: UnoDOS",0
 txt_fatware	db	"$: FATWare",0
 txt_mdos	db	"%: MDOS3",0
 txt_tbios	db	"&: TBIOS",0
-txt_demfir	db	"+: DEMFIR",0
-txt_plsdivide:	db	"-: +divide",0
+txt_demfir	db	"-: DEMFIR",0
+txt_plsdivide:	db	"+: +divide",0
 txt_easyhdd:	db	"3: EasyHDD",0
 txt_cfdriver:	db	"#: CFDriver",0
 txt_bsrom:	db	"4: BSROM",0
@@ -838,7 +838,7 @@ txt_nmi_1:	db	"7: NMI menu 1",0
 txt_nmi_2:	db	"8: NMI menu 2",0
 txt_reserved0	db	"9: Reserved",0
 txt_devace:	db	"A: DevastAce",0
-txt_ubios:	db	"B: BIOS",0
+txt_ubios:	db	"B: Setup",0
 txt_reserved1:	db	"C: Reserved",0
 txt_reserved2:	db	"D: Reserved",0
 txt_reserved3:	db	"E: Reserved",0
