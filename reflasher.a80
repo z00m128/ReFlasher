@@ -864,9 +864,9 @@ txt_userapps1:	db	"X: UserApps 1",0
 txt_userapps2:	db	"Y: UserApps 2",0
 txt_userapps3:	db	"Z: UserApps 3",0
 
-txt_copyright:	db	#7f,"z00m^SinDiKAT 12/2021",0
+txt_copyright:	db	#7f,"z00m^SinDiKAT 07/2025",0
 txt_title:	db	"       ReFlasher for MB03+ Ultimate",0
-txt_version:	db	"Version: 1.6",0
+txt_version:	db	"Version: 1.7",0
 
 txt_status:	db	"STATUS:",0
 txt_action:	db	"Waiting for your action",0
