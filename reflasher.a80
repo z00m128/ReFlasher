@@ -4,7 +4,7 @@
 ; (c) 2025 z00m^SinDiKAT
 ; formatted for SjASMPlus
 
-; Version: 1.7
+; Version: 1.8
 
 		device	zxspectrum48
 
@@ -480,6 +480,11 @@ show_text:	ld	hl,#0202		; title label
 		ld	hl,txt_version		; version
 		call	print42
 
+		ld	hl,#B902
+		ld	(xy42.cursor),hl
+		ld	hl,txt_update		; FW update
+		call	print42
+
 		ld	hl,#B179
 		ld	(xy42.cursor),hl
 		ld	hl,txt_copyright	; copyright
@@ -864,9 +869,10 @@ txt_userapps1:	db	"X: UserApps 1",0
 txt_userapps2:	db	"Y: UserApps 2",0
 txt_userapps3:	db	"Z: UserApps 3",0
 
-txt_copyright:	db	#7f,"z00m^SinDiKAT 07/2025",0
+txt_copyright:	db	#7f,"z00m^SinDiKAT 11/2025",0
 txt_title:	db	"       ReFlasher for MB03+ Ultimate",0
-txt_version:	db	"Version: 1.7",0
+txt_version:	db	"Version: 1.8",0
+txt_update	db	"Update : 20251118",0
 
 txt_status:	db	"STATUS:",0
 txt_action:	db	"Waiting for your action",0

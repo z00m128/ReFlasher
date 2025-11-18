@@ -1,5 +1,6 @@
 sjasmplus --syntax=f --lst=reflasher.lst reflasher.a80
 zmakebas -a 9998 -n ReFlasher -o 001.tap reflasher.bas
+zmakebas -a 5 -n UChanger -o 003.tap uchanger.bas
 bin2tap -o 002.tap reflasher.bin
 bin2tap -o firmwares.tap fw/boot.cod
 bin2tap -append -o firmwares.tap fw/Diag.cod
@@ -43,5 +44,5 @@ bin2tap -append -o firmwares.tap fw/MDOS3.cod
 bin2tap -append -o firmwares.tap fw/TBIOS.cod
 bin2tap -append -o firmwares.tap fw/DEMFIR.cod
 bin2tap -append -o firmwares.tap fw/+divide.cod
-cat 001.tap 002.tap firmwares.tap > ReFlashr.tap
-rm 001.tap 002.tap firmwares.tap
+cat 001.tap 002.tap firmwares.tap 003.tap > ReFlashr.tap
+rm 001.tap 002.tap 003.tap firmwares.tap
