@@ -6,12 +6,12 @@ bin2tap -append -o firmwares.tap fw/Diag.cod
 bin2tap -append -o firmwares.tap fw/ESXMMC.cod
 bin2tap -append -o firmwares.tap fw/ESXIDE.cod
 bin2tap -append -o firmwares.tap fw/EasyHDD.cod
-bin2tap -append -o firmwares.tap fw/MB02_1.cod
-bin2tap -append -o firmwares.tap fw/MB02_2.cod
-bin2tap -append -o firmwares.tap fw/MB02_3.cod
-bin2tap -append -o firmwares.tap fw/MB02_4.cod
-bin2tap -append -o firmwares.tap fw/MB02_5.cod
-bin2tap -append -o firmwares.tap fw/MB02_6.cod
+bin2tap -append -o firmwares.tap fw/BSROM140.cod
+bin2tap -append -o firmwares.tap fw/BSDOS308.cod
+bin2tap -append -o firmwares.tap fw/MBpatch.cod
+bin2tap -append -o firmwares.tap fw/MBNMI1.cod
+bin2tap -append -o firmwares.tap fw/MBNMI2.cod
+bin2tap -append -o firmwares.tap fw/MBrsrvd.cod
 bin2tap -append -o firmwares.tap fw/DevAce.cod
 bin2tap -append -o firmwares.tap fw/setup.cod
 bin2tap -append -o firmwares.tap fw/wifi.cod
@@ -43,8 +43,5 @@ bin2tap -append -o firmwares.tap fw/MDOS3.cod
 bin2tap -append -o firmwares.tap fw/TBIOS.cod
 bin2tap -append -o firmwares.tap fw/DEMFIR.cod
 bin2tap -append -o firmwares.tap fw/+divide.cod
-bin2tap -append -o firmwares.tap fw/BSROM140.cod
-bin2tap -append -o firmwares.tap fw/GW03.cod
-bin2tap -append -o firmwares.tap fw/jgh.cod
 cat 001.tap 002.tap firmwares.tap > ReFlashr.tap
 rm 001.tap 002.tap firmwares.tap
