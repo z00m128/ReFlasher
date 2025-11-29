@@ -872,7 +872,7 @@ txt_userapps3:	db	"Z: UserApps 3",0
 txt_copyright:	db	#7f,"z00m^SinDiKAT 11/2025",0
 txt_title:	db	"       ReFlasher for MB03+ Ultimate",0
 txt_version:	db	"Version: 1.8",0
-txt_update	db	"Update : 20251118",0
+txt_update	db	"Update : 20251129",0
 
 txt_status:	db	"STATUS:",0
 txt_action:	db	"Waiting for your action",0
