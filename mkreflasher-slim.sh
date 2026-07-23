@@ -1,4 +1,4 @@
-sjasmplus --syntax=f --lst=reflasher.lst reflasher-slim.a80
+sjasmplus --syntax=f --lst=reflasher-slim.lst reflasher-slim.a80
 zmakebas -a 9998 -n ReFlasher -o 001.tap reflasher-slim.bas
 zmakebas -a 5 -n UChanger -o 003.tap uchanger.bas
 bin2tap -o 002.tap reflasher-slim.bin
