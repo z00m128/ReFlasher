@@ -1,7 +1,7 @@
 ;-------------------------------------;
-;    ReFlasher for  MB03+ Ultimate    ;
+;      ReFlasher for  MB03+ Slim      ;
 ;-------------------------------------;
-; (c) 2025 z00m^SinDiKAT
+; (c) 2026 z00m^SinDiKAT
 ; formatted for SjASMPlus
 
 ; Version: 1.8
@@ -869,8 +869,8 @@ txt_userapps1:	db	"X: UserApps 1",0
 txt_userapps2:	db	"Y: UserApps 2",0
 txt_userapps3:	db	"Z: UserApps 3",0
 
-txt_copyright:	db	#7f,"z00m^SinDiKAT 11/2025",0
-txt_title:	db	"       ReFlasher for MB03+ Ultimate",0
+txt_copyright:	db	#7f,"z00m^SinDiKAT 07/2026",0
+txt_title:	db	"         ReFlasher for MB03+ Slim",0
 txt_version:	db	"Version: 1.8",0
 txt_update	db	"Update : 20260428",0
 
@@ -897,4 +897,4 @@ txt_loading:	db	"Loading binary",0
 txt_quit:	db	"Exiting!",0
 txt_any_key:	db	"Press any key.",0
 
-		savebin "reflasher.bin",start,$-start
+		savebin "reflasher-slim.bin",start,$-start
