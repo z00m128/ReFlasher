@@ -897,4 +897,4 @@ txt_loading:	db	"Loading binary",0
 txt_quit:	db	"Exiting!",0
 txt_any_key:	db	"Press any key.",0
 
-		savebin "reflasher-slim.bin",start,$-start
+		savebin "reflashers.bin",start,$-start

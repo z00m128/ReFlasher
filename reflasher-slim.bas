@@ -46,4 +46,4 @@
 66 load "ESXMMC" code val "49152": load "+divide" code val "57344": goto val "5"
 9997 stop
 9998 border not pi: paper not pi: ink val "7": clear val "32767"
-9999 poke val "23739", code "o": load "reflasher-" code val "32768" : run
+9999 poke val "23739", code "o": load "reflashers" code val "32768" : run
